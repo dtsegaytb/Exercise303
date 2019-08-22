@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <a href="/">Show All To Do list</a><br />
+    Name: <span th:text="${todo.name}"></span><br />
+    Task: <span th:text="${todo.task}"></span><br />
+    Priority: <span th:text="${todo.priority}"></span><br />
+    <a th:href="@{/delete/{id} (id=${todo.id})}">Delete this course</a>
+</body>
+</html>
